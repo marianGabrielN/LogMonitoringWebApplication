@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogMonitoring.API", "src\LogMonitoring.API\LogMonitoring.API.csproj", "{9AC2000B-327A-4B21-8684-0C4D178E9ABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogMonitoring.Application", "src\LogMonitoring.Application\LogMonitoring.Application.csproj", "{17F0D019-665B-4D07-B7F4-B6C07361D9C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogMonitoring.Domain", "src\LogMonitoring.Domain\LogMonitoring.Domain.csproj", "{B72DF70B-7913-4E0B-B08C-47F9F40EC9CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogMonitoring.Infrastructure", "src\LogMonitoring.Infrastructure\LogMonitoring.Infrastructure.csproj", "{6431BF63-3715-4232-B1F8-4D6A0C2CB222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogMonitoring.API.Tests", "tests\LogMonitoring.API.Tests\LogMonitoring.API.Tests.csproj", "{C9431EB3-859E-4E5F-BA73-356EE4B9460D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogMonitoring.Application.Tests", "tests\LogMonitoring.Application.Tests\LogMonitoring.Application.Tests.csproj", "{3889108F-968A-400A-9AF6-4713CE660383}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AC2000B-327A-4B21-8684-0C4D178E9ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC2000B-327A-4B21-8684-0C4D178E9ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC2000B-327A-4B21-8684-0C4D178E9ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC2000B-327A-4B21-8684-0C4D178E9ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17F0D019-665B-4D07-B7F4-B6C07361D9C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17F0D019-665B-4D07-B7F4-B6C07361D9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17F0D019-665B-4D07-B7F4-B6C07361D9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17F0D019-665B-4D07-B7F4-B6C07361D9C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B72DF70B-7913-4E0B-B08C-47F9F40EC9CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B72DF70B-7913-4E0B-B08C-47F9F40EC9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B72DF70B-7913-4E0B-B08C-47F9F40EC9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B72DF70B-7913-4E0B-B08C-47F9F40EC9CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6431BF63-3715-4232-B1F8-4D6A0C2CB222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6431BF63-3715-4232-B1F8-4D6A0C2CB222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6431BF63-3715-4232-B1F8-4D6A0C2CB222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6431BF63-3715-4232-B1F8-4D6A0C2CB222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9431EB3-859E-4E5F-BA73-356EE4B9460D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9431EB3-859E-4E5F-BA73-356EE4B9460D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9431EB3-859E-4E5F-BA73-356EE4B9460D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9431EB3-859E-4E5F-BA73-356EE4B9460D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3889108F-968A-400A-9AF6-4713CE660383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3889108F-968A-400A-9AF6-4713CE660383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3889108F-968A-400A-9AF6-4713CE660383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3889108F-968A-400A-9AF6-4713CE660383}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B70054F-D1BB-46D3-A116-A40577560311}
+	EndGlobalSection
+EndGlobal
