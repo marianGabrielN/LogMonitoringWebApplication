@@ -1,0 +1,12 @@
+<div class="dashboard-container">
+    <app-log-processor
+        [isLoading]="isLoading"
+        [error]="error"
+        (process)="onProcessLogs()"
+    ></app-log-processor>
+
+    <ng-container *ngIf="report">
+        <app-jobs-summary [report]="report"></app-jobs-summary>
+        <app-jobs-table [jobs]="report.jobs"></app-jobs-table>
+    </ng-container>
+</div>

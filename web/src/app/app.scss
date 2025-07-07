@@ -1,0 +1,61 @@
+.content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.action-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.spinner {
+  margin-left: 20px;
+}
+
+.error-message {
+  margin-top: 20px;
+  color: #f44336; /* Material Red */
+  font-weight: 500;
+}
+
+.summary-card {
+  background-color: #f5f5f5;
+}
+
+.summary-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  font-size: 1.1em;
+}
+
+.mat-table {
+  width: 100%;
+}
+
+.status-chip {
+  padding: 5px 10px;
+  border-radius: 16px;
+  color: white;
+  font-weight: 500;
+}
+
+.status-completed {
+  background-color: #4CAF50; /* Green */
+}
+
+.status-warning {
+  background-color: #FFC107; /* Amber */
+  color: black !important;
+}
+
+.status-error {
+  background-color: #F44336; /* Red */
+}
+
+.status-running {
+  background-color: #2196F3; /* Blue */
+}

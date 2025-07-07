@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { RouterModule } from "@angular/router";
+import { HeaderComponent } from "./layout/header/header";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.html',
-  standalone: false,
-  styleUrl: './app.scss'
+    selector: 'app-root',
+    standalone: true,
+    imports: [
+        RouterModule,
+        HeaderComponent,
+    ],
+    templateUrl: './app.html',
 })
-export class App {
-  protected title = 'LogMonitoring';
-}
+export class App {}

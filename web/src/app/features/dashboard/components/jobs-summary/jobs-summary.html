@@ -1,0 +1,24 @@
+<mat-card class="summary-card" *ngIf="report">
+    <mat-card-header>
+        <mat-card-title>Processing Summary</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="summary-content">
+        <div><strong>Total:</strong> {{ report.totalJobsProcessed }}</div>
+        <div class="summary-item">
+            <span class="status-chip status-completed"></span
+            ><strong>Completed:</strong> {{ report.completed }}
+        </div>
+        <div class="summary-item">
+            <span class="status-chip status-warning"></span
+            ><strong>Warnings:</strong> {{ report.warnings }}
+        </div>
+        <div class="summary-item">
+            <span class="status-chip status-error"></span
+            ><strong>Errors:</strong> {{ report.errors }}
+        </div>
+        <div class="summary-item">
+            <span class="status-chip status-running"></span
+            ><strong>Running:</strong> {{ report.running }}
+        </div>
+    </mat-card-content>
+</mat-card>

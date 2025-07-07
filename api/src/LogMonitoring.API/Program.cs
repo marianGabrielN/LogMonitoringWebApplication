@@ -2,10 +2,24 @@ using LogMonitoring.Application.Interfaces;
 using LogMonitoring.Application.Services;
 using LogMonitoring.Infrastructure;
 
+var localClientPolicyName = "AllowLocaLAngularClient";
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// 1. Add CORS services and define the policy.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(
+        name: localClientPolicyName,
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
 
+// Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -24,6 +38,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors(localClientPolicyName);
 app.UseAuthorization();
 app.MapControllers();
 

@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Log Processing</mat-card-title>
+        <mat-card-subtitle>
+            Click the button to process the log file on the server.
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="action-container">
+            <button
+                mat-raised-button
+                color="primary"
+                (click)="onProcessClick()"
+                [disabled]="isLoading"
+            >
+                Process Logs
+            </button>
+            <mat-spinner *ngIf="isLoading" diameter="30"></mat-spinner>
+        </div>
+
+        <div *ngIf="error" class="error-message">
+            {{ error }}
+        </div>
+    </mat-card-content>
+</mat-card>
